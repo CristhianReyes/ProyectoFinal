@@ -8,6 +8,8 @@ class Editor(models.Model):
 	estado = models.CharField(max_length=50)
 	pais = models.CharField(max_length=50)
 	website = models.URLField()
+	class Meta:
+		verbose_name_plural = 'Editores'
 
 	def __unicode__(self):
 		return self.nombre
